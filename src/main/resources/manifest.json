@@ -1,0 +1,22 @@
+{
+    "Group": "Marggx",
+    "Name": "HeartOfLife",
+    "Version": "0.0.1",
+    "Description": "An example plugin for HyTale!",
+    "Authors": [
+        {
+            "Name": "Marggx"
+        }
+    ],
+    "Website": "marggx.dev",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "dev.marggx.plugin.HeartOfLife",
+    "IncludesAssetPack": true
+}

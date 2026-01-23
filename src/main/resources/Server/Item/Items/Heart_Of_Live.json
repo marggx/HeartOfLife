@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Heart_Of_Live.name",
+    "Description": "server.items.Heart_Of_Live.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Heart_Of_Live.png",
+  "Quality": "Legendary",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "Model": "Resources/Ingredients/Voidheart.blockymodel",
+  "Texture": "Resources/HeartOfLive_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      0,
+      180,
+      0
+    ],
+    "Translation": [
+      0,
+      -14
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "Scale": 1.2,
+  "Light": {
+    "Color": "#103",
+    "Radius": 1
+  },
+  "DropOnDeath": false,
+  "Utility": {
+    "Usable": true
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Voidheart"
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence_Concentrated",
+        "Quantity": 10
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Misc"
+        ]
+      }
+    ],
+    "TimeSeconds": 3
+  },
+  "ItemLevel": 60
+}
