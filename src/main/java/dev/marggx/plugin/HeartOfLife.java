@@ -10,6 +10,7 @@ import javax.annotation.Nonnull;
 public class HeartOfLife extends JavaPlugin {
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+    public static final String HOLItemId = "Heart_Of_Live";
 
     public HeartOfLife(@Nonnull JavaPluginInit init) {
         super(init);

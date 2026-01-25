@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Heart_Of_Live.name",
-    "Description": "server.items.Heart_Of_Live.description"
+    "Name": "items.Heart_Of_Live.name",
+    "Description": "items.Heart_Of_Live.description"
   },
   "Icon": "Icons/ItemsGenerated/Heart_Of_Live.png",
   "Quality": "Legendary",

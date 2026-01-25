@@ -1,0 +1,41 @@
+{
+  "StatModifiers": {
+    "Health": 5
+  },
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 2
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 2
+      }
+    ]
+  },
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Potion_Health_Implosion",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Pelvis"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  },
+  "StatModifierEffects": {
+    "WorldParticles": [
+      {
+        "SystemId": "Potion_Health_Implosion"
+      }
+    ]
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 5,
+  "DamageCalculatorCooldown": 0.1,
+  "StatusEffectIcon": "UI/StatusEffects/HealthRegen.png"
+}
