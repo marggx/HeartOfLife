@@ -11,7 +11,9 @@ import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.asset.type.entityeffect.config.EntityEffect;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
+import com.hypixel.hytale.server.core.inventory.InventoryComponent;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
+import com.hypixel.hytale.server.core.inventory.container.CombinedItemContainer;
 import com.hypixel.hytale.server.core.modules.entity.damage.Damage;
 import com.hypixel.hytale.server.core.modules.entity.damage.DamageModule;
 import com.hypixel.hytale.server.core.modules.entity.damage.DamageSystems;
@@ -65,7 +67,7 @@ public class HOLDamageSystem extends DamageSystems.ApplyDamage {
         Player player = archetypeChunk.getComponent(index, Player.getComponentType());
         assert player != null;
 
-        ItemContainer utilities = player.getInventory().getUtility();
+        CombinedItemContainer utilities = InventoryComponent.getCombined(commandBuffer, archetypeChunk, index, InventoryComponent.HOTBAR_UTILITY_CONSUMABLE_STORAGE);
         AtomicBoolean hasFoundHOL = new AtomicBoolean(false);
 
         utilities.forEach((i, itemStack) -> {
@@ -101,9 +103,12 @@ public class HOLDamageSystem extends DamageSystems.ApplyDamage {
 
         effectControllerComponent.addEffect(playerEntityRef, entityEffect, store);
 
+        ItemStack holItemStack = new ItemStack(HeartOfLife.HOLItemId);
         NotificationUtil.sendNotification(
             playerRef.getPacketHandler(),
             Message.translation("items.Heart_Of_Live.used").color("#00FF00"),
+            null,
+            holItemStack.toPacket(),
             NotificationStyle.Success
         );
         damage.setAmount(newDamage);

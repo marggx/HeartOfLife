@@ -5,14 +5,14 @@
   "DamageResistance": {
     "Physical": [
       {
-        "CalculationType": "Multiplicative",
-        "Amount": 2
+        "CalculationType": "Flat",
+        "Amount": 10
       }
     ],
     "Projectile": [
       {
-        "CalculationType": "Multiplicative",
-        "Amount": 2
+        "CalculationType": "Flat",
+        "Amount": 10
       }
     ]
   },
