@@ -1,7 +1,7 @@
 {
     "Group": "Marggx",
     "Name": "HeartOfLife",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "Description": "The Heart of Live is an item that can prevent players or mobs from dying when they take fatal damage and have it equipped in the utility Slot.",
     "Authors": [
         {
